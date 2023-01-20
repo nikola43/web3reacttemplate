@@ -5,9 +5,20 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { Web3ReactProvider } from '@web3-react/core'
 import { Web3Provider } from "@ethersproject/providers";
+import Web3 from 'web3'
 
-function getLibrary(provider: any, connector: any) {
-  return new Web3Provider(provider);
+import CssBaseline from '@mui/material/CssBaseline';
+import { createTheme, ThemeProvider } from '@mui/material';
+
+const darkTheme = createTheme({
+  palette: {
+    mode: 'dark',
+  },
+});
+
+
+function getLibrary(provider: any) {
+  return new Web3(provider)
 }
 
 const root = ReactDOM.createRoot(
@@ -17,9 +28,10 @@ const root = ReactDOM.createRoot(
 root.render(
   <Web3ReactProvider getLibrary={getLibrary}>
     <React.StrictMode>
-
-      <App />
-
+      <ThemeProvider theme={darkTheme}>
+        <CssBaseline />
+        <App />
+      </ThemeProvider>
     </React.StrictMode >
   </Web3ReactProvider>
 

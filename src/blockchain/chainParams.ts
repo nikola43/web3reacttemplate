@@ -1,28 +1,28 @@
 const ChainParams = [
   {
-    chainId: "0xF6",
-    //chainIdHex: "0xF6",
-    chainName: "EWC Mainnet",
+    chainId: 43114,
+    chainIdHex: "0A86A",
+    chainName: "Avalanche Mainnet C-Chain",
     nativeCurrency: {
-      name: "Energy Web Token",
-      symbol: "EWC",
+      name: "AVAX",
+      symbol: "AVAX",
       decimals: 18,
     },
-    rpcUrls: ["https://rpc.energyweb.org"],
-    blockExplorerUrls: ["https://explorer.energyweb.org"]
+    rpcUrls: ["https://api.avax.network/ext/bc/C/rpc"],
+    blockExplorerUrls: ["https://snowtrace.io"]
     //logo: "./sup/bsclogo.png"
   },
   {
-    chainId: "0x12047",
-    //chainIdHex: "0x12047",
-    chainName: "EWC Testnet",
+    chainId: 43113,
+    chainIdHex: "0xA869",
+    chainName: "Avalanche Fuji Testnet",
     nativeCurrency: {
-      name: "Volta",
-      symbol: "VT",
+      name: "AVAX",
+      symbol: "AVAX",
       decimals: 18,
     },
-    rpcUrls: ["https://volta-rpc.energyweb.org"],
-    blockExplorerUrls: ['https://volta-explorer.energyweb.org']
+    rpcUrls: ["https://api.avax-test.network/ext/bc/C/rpc"],
+    blockExplorerUrls: ["https://testnet.snowtrace.io"]
     //logo: "./sup/bsclogo.png"
   },
 ];

@@ -1,7 +1,7 @@
 import { InjectedConnector } from '@web3-react/injected-connector'
 
 export const injected = new InjectedConnector({
-    supportedChainIds: [56, 97],
+    supportedChainIds: [43114, 43113],
 })
 
 const { ethereum } = window;
